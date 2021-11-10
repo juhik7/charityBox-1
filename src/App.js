@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useRouteMatch
 } from "react-router-dom";
 import AdminDash from "./Admin/AdminDash";
 import Home from "./Home";

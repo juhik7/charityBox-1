@@ -22,16 +22,19 @@ const AdminHeader = ({url}) =>{
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <Link className="nav-link" to={`${url}/`}>Dashboard</Link> 
+                            <Link className="nav-link" to={`${url}/`}>DASHBOARD</Link> 
                         </NavItem>
                         <NavItem>
-                            <Link className="nav-link" to={`${url}/events`}>Events</Link> 
+                            <Link className="nav-link" to={`${url}/events`}>EVENTS</Link> 
                         </NavItem>
                         <NavItem>
-                            <Link className="nav-link" to={`${url}/donations`}>Donations</Link> 
+                            <Link className="nav-link" to={`${url}/donations`}>DONATIONS</Link> 
                         </NavItem>
                         <NavItem>
-                            <Link className="nav-link" to={`${url}/ngo`}>Ngo</Link>
+                            <Link className="nav-link" to={`${url}/ngo`}>NGO</Link>
+                        </NavItem>
+                        <NavItem>
+                            <Link className="nav-link" to={`${url}/coupons`}>COUPONS</Link>
                         </NavItem>
                     </Nav>
                 </Collapse>

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     useRouteMatch
@@ -10,6 +9,7 @@ import Events from "./Events";
 import Ngo from "./Ngo";
 import Donations from "./Donations";
 import NotFound from "./NotFound";
+import Coupons from "./Coupons";
 
 const AdminDash = () =>{
     let {path} = useRouteMatch();
@@ -28,6 +28,9 @@ const AdminDash = () =>{
             </Route>
             <Route path={`${path}/ngo`}>
                 <Ngo />
+            </Route>
+            <Route path={`${path}/coupons`}>
+                <Coupons />
             </Route>
             <Route component={NotFound} />
         </Switch>
